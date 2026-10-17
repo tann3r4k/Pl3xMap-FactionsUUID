@@ -1,0 +1,14 @@
+enabled: true
+claims:
+  label: Claims
+  stroke-weight: 2
+  stroke-opacity: 0.9
+  fill-opacity: 0.28
+homes:
+  enabled: true
+  label: Faction Homes
+warps:
+  enabled: true
+  label: Faction Warps
+  # The layer control exists, and starts toggled off.
+  default-hidden: true

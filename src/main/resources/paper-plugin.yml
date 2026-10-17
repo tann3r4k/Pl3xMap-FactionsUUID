@@ -1,0 +1,25 @@
+name: Pl3xMap-FactionsUUID
+version: '${version}'
+main: dev.tanner.pl3xmap.factions.FactionsMapPlugin
+bootstrapper: dev.tanner.pl3xmap.factions.FactionsMapBootstrap
+description: Pl3xMap addon for FactionsUUID
+api-version: '26.2'
+authors:
+  - Tanner Kuck
+website: https://github.com/tann3r4k/Pl3xMap-FactionsUUID
+
+dependencies:
+  server:
+    Pl3xMap:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    FactionsUUID:
+      load: BEFORE
+      required: true
+      join-classpath: true
+
+permissions:
+  pl3xmapfactions.reload:
+    description: Reload the Factions map addon
+    default: op
